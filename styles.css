@@ -1,0 +1,111 @@
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    display: block;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+#header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: rgb(218,218,218);
+    background: linear-gradient(90deg, rgba(218,218,218,1) 0%, rgba(255,255,255,1) 35%, rgba(214,214,214,1) 100%);
+}
+#logo{
+    display: inline-flex;
+    margin: auto 0px auto 100px;
+}
+#logo > img{
+    width: 50px;
+}
+#menu{
+    display:flex;
+    height: auto;
+    margin-left:auto;
+}
+#menu > ul{
+    display:flex;
+    margin:auto 0;
+    padding: 20px;
+
+}
+#menu > ul > li{
+    padding: 0px 80px 0px 0px;
+    list-style-type: none;
+}
+#menu > ul > li > a{
+    color: #666;
+    font-size: 16pt;
+    background: transparent;
+    text-decoration: none;
+}
+#welcome{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgb(163, 163, 163);
+    #background: linear-gradient(90deg, rgba(0,255,214,1) 0%, rgba(180,255,252,1) 35%, hsl(200, 100%, 50%) 100%);
+}
+
+#wleft{
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+#wleft > img{
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: 200px;
+    top: 60px;
+
+}
+#wright{
+    width: 50%;
+    height: auto;
+    padding: 10%;
+}
+#wright > h1{
+    font-size: 48pt;
+    font-weight: 700;
+    color:#black;
+}
+#wright > p{
+    font-size: 36pt;
+    color:#black;
+}
+#content{
+    display:flex;
+    width: 100%;
+    height: auto;
+    background-color: brown;
+    padding: 0px 0px;
+}
+#skills{
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+}
+#skills > h1{
+    font-size: 40pt;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#skills > span{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    align-items: center;
+}
+#skills > span > img{
+    transition: transform 0.5s;
+}
+#skills > span > img:hover{
+    transform: scale(2);
+    transition: transform 2s;
+}
