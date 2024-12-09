@@ -141,7 +141,8 @@ html {
         width: 0%; 
         background: linear-gradient(90deg, #ee7752, #e73c7e);
         border-radius: 5px;
-        animation: fill-animation 1.5s ease-in-out forwards;
+        animation: fill-animation 1.5s ease-in ;
+        animation-fill-mode: both;
     }
 
     @keyframes fill-animation {
@@ -156,14 +157,26 @@ html {
 /*section3 projects*/
 
       .projects{
-        background-color: green;
         width: 80vw;
         height: 80vh;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        align-items: baseline;
+        justify-content: center;
+        align-content: space-around;
+        justify-items: center;
+        margin-top: 1%;
+
+        
       }
-      .test{
-        width: 30%;
-        height: 30%;
+      .item{
+        display: grid;
+        width: 20vw;
+        height: 36vh;
+        border-radius:30px;
         background-color: white;
+        justify-content: center;
+        align-items: center;
       }
     
 /*section5 contact*/
