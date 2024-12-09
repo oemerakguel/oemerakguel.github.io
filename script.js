@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
           return (-c / 2) * (t * (t - 2) - 1) + b;
         };
 
-        const duration = 500;
+        const duration = 1000;
         const distance = targetPosition - currentPosition;
         const scrollValue = easeInOutQuad(
           elapsedTime,
