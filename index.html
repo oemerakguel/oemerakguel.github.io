@@ -3,44 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>PORTFOLIO | ÖMER AKGÜL</title>
   </head>
   <body>
     <div id="header">
-      <div id="logo">
-        <img src="logo.png"  alt="">
-      </div>
       <div id="menu">
         <ul>
-          <li><a href="#skills">MY SKILLS</a></li>
-          <li><a href="#showroom">SHOWROOM</a></li>
-          <li><a href="#about">ABOUT ME</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#section1">HOME</a></li>
+          <li><a href="#section2">SKILLS</a></li>
+          <li><a href="#section3">PROJECTS</a></li>
+          <li><a href="#section4">ABOUT ME</a></li>
+          <li><a href="#section5">CONTACT</a></li>
         </ul>
       </div>
     </div>
-    <div id="welcome">
-      <div id="wleft">
-        <img src="men.png" alt="">
-      </div>
-      <div id="wright">
+
+    <div id="section1" class="section">
+      <div id="welcome">
         <h1>HI! I AM ÖMER AKGÜL</h1>
-        <p>I am a passionate web developer
-          and I love what I do.</p>
+        <p>EXPLORE MY WORLD OF CODE</p>
       </div>
     </div>
-    <div id="content">
-      <div id="skills">
+
+    <div id="section2" class="section">
+      <div class="skills-container">
         <h1>MY SKILLS</h1>
-        <span><img src="" alt="" width="200" /></span>
-        <span><img src="" alt="" width="200" /></span>
-        <span><img src="" alt="" width="200" /></span>
+        <div class="skill">
+            <span class="skill-name"><h3>HTML</h3></span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--skill-level: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name"><h3>CSS</h3></span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--skill-level: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name"><h3>JAVASCRIPT</h3></span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--skill-level: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name"><h3>PYTHON</h3></span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--skill-level: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name"><h3>SQL</h3></span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--skill-level: 70%;"></div>
+            </div>
+        </div>
       </div>
-      <div id="showroom"></div>
-      <div id="about"></div>
-      <div id="contact"></div>
     </div>
-    <div id="footer"></div>
+
+    <div id="section3" class="section">
+      <div class="projects">
+        <div class="test">Hallo</div>
+        
+      </div>
+    </div>
+    <div id="section4" class="section">
+      <p style="font-size: 48pt; color: #444;">4</p>
+    </div>
+    <div id="section5" class="section">
+      <div class="contact-form">
+        <h1>CONTACT ME</h1>
+        <form action="mail.php" method="POST">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+    
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+    
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" required></textarea>
+    
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      
+    </div>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
