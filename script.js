@@ -53,12 +53,29 @@ function restartAnimation(event) {
   let skillFills = document.querySelectorAll('.skill-fill');
 
   skillFills.forEach(skillFill => {
-    // Animation zurücksetzen
+
     skillFill.style.animationName = 'none';
 
-    // Sicherstellen, dass die Änderung angewendet wird, bevor die Animation neu gestartet wird
     requestAnimationFrame(() => {
       skillFill.style.animationName = '';
+
+    });
+  });
+}
+
+let restartsquare = document.querySelector('#squareButton');
+restartsquare.addEventListener('click', restartSquares, false);
+
+function restartSquares(event) {
+  let square = document.querySelectorAll('.item');
+
+  square.forEach(squares => {
+
+    squares.style.animationName = 'none';
+
+    
+    requestAnimationFrame(() => {
+      squares.style.animationName = '';
     });
   });
 }
