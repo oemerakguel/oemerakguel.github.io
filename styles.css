@@ -177,7 +177,8 @@ html {
         background-color: white;
         justify-content: center;
         align-items: center;
-        animation: fade-in 3s;
+        animation: fade-in 3s, gradient 4s;
+    
       }
 
     
@@ -245,5 +246,12 @@ html {
         50% {scale: 0.75; opacity: 0.5;rotate: -45deg;}
         75% {scale: 0.5; opacity: 0.75;rotate: 0deg;}
         100% {scale: 1; opacity: 1;}
+      }
+      @keyframes fabolusches{
+        0%{display:absolute;justify-content: center;background-color: pink;}
+        50%{display:absolute;justify-content: center;background-color: rgb(114, 246, 255);}
+        75%{display:absolute;justify-content: center;background-color: rgb(255, 23, 61);}
+
+        100%{display:absolute;justify-content: center;background-color: #23a6d5;}
       }
 
